@@ -1,16 +1,19 @@
 # -*- coding: utf-8 -*-
 
-def yanghuit(n):
-    res = [1]
-    if n == 1:
-        yield(res)
-    s = 1
-    while s <= n:
-        if s == 1:
-            yield(res)
-        tmp = res
-        res = []
-        tmp.insert(0,0)
-        tmp.append(0)
-        for m in tmp:
-            p = m
+#----------------------
+# 杨辉三角
+#----------------------
+
+def triangles():
+    L = [1]
+    yield L
+    while True:
+        L = [1] + [L[x]+L[x+1] for x in range(len(L)-1)] + [1]
+        yield L
+
+n = 0
+for L in triangles():
+    print(L)
+    n += 1
+    if n == 10:
+        break
