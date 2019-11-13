@@ -50,3 +50,11 @@ def main():
 
 print('1000以内的素数')
 main()
+
+#-----------------------------
+# 回数
+#-----------------------------
+def is_palindrome(n):
+    return str(n)==str(n)[::-1]
+     
+print('1000以内的回数',list(filter(is_palindrome, range(1, 1000))))
