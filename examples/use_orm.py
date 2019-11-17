@@ -64,7 +64,7 @@ class Model(dict, metaclass=ModelMetaclass):
         print('SQL: %s' % sql)
         print('ARGS: %s' % str(args))
 
-# testing code:
+# 测试
 
 class User(Model):
     id = IntegerField('id')
