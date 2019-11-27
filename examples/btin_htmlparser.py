@@ -59,7 +59,7 @@ class MyHTMLParser(HTMLParser):
             print('Title: %s' % self._title[n])
             print('Time:  %s' % self._time[n])
             print('Place: %s' % self._place[n])
-            print('--------------------------------------')
+            print('---------------------------------------')
 
 url = "https://www.python.org/events/python-events/"
 req = request.Request(url)
