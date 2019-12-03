@@ -76,7 +76,7 @@ def parse_weather(xml):
     return weather_dict
 
 
-# XML文档，输出结果的数据来源
+# XML文档，输出结果数据来源
 # 将XML文档赋值给data
 
 data = r'''<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
