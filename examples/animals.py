@@ -29,3 +29,4 @@ print('d is Dog?', isinstance(d, Dog))
 print('d is Cat?', isinstance(d, Cat))
 
 run_twice(c)
+run_twice(d)
