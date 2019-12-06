@@ -10,4 +10,4 @@ def product(*param):
 print('product(5) =', product(5))
 print('product(5, 6) =', product(5, 6))
 print('product(5, 6, 7) =', product(5, 6, 7))
-print('product(5, 6, 7, 9) =', product(5, 6, 7, 9))
+print('product(5, 6, 7,9) =', product(5, 6, 7, 9))
