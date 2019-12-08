@@ -13,7 +13,7 @@ print('给实例绑定name属性:Michael并打印')
 print('s.name',s.name)  # 由于实例属性优先级比类属性高，因此，它会屏蔽掉类的name属性
 print('Student.name:',Student.name) # 但是类属性并未消失，用Student.name仍然可以访问
 del s.name # 如果删除实例的name属性
-print('s.name',s.name)  # 再次调用s.name，由于实例的name属性没有找到，类的name属性就显示出来了
+print('s.name',s.name)  # 再次调用s.name，由于实例的name属性没有找到，类的name属性就显示出来
 
 class Students(object):
     count = 0
