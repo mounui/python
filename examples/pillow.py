@@ -33,7 +33,7 @@ im2.save('../assets/blur.jpg', 'jpeg')
 
 import random
 
-# 随机字母
+# 随机字母：
 def rndChar():
     return chr(random.randint(65,90))
 
