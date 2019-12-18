@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 # 打开一个jpg图像文件，注意路径
 im = Image.open('../assets/test.jpg')
-# 获得图像尺寸：
+# 获得图像尺寸
 w, h = im.size
 print('Original image size: %sx%s' % (w, h))
 # 缩放到50%
