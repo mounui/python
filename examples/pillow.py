@@ -14,7 +14,7 @@ print('Original image size: %sx%s' % (w, h))
 # 缩放到50%
 im.thumbnail((w//2, h//2))
 print('Resize image to: %sx%s' % (w//2, h//2))
-# 存储缩放后的图像为jpeg:
+# 存储缩放后的图像为jpeg
 im.save('../assets/thumbnail.jpg', 'jpeg')
 
 # ----------------------------------
