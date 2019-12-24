@@ -23,7 +23,7 @@ im.save('../assets/thumbnail.jpg', 'jpeg')
 
 # 打开一个jpg图像文件，注意路径
 im = Image.open('../assets/test.jpg')
-# 应用模糊滤镜
+# 应用模糊滤镜:
 im2 = im.filter(ImageFilter.BLUR)
 im2.save('../assets/blur.jpg', 'jpeg')
 
