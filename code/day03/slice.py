@@ -85,3 +85,19 @@ def prod(L):
     return reduce(lambda x, y: x * y, L)
 
 print(prod([1,3,5,9]))
+
+# ----------------------------------
+# 把字符串转换成浮点数 eg:'123.456'
+# ----------------------------------
+
+def str2float(s):
+    digits = {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}
+    def fn(x, y):
+        return x * 10 + y
+    def char2num(s):
+        return digits[s]
+    # 从小数点处将字符串拆分为前后两段
+    int_str, float_str = s.split('.')
+    return reduce(fn, map(char2num, int_str)) + reduce(fn, map(char2num, float_str)) / pow(10, len(float_str))
+
+print('str2float(\'123.456\') =', str2float('123.456'))
