@@ -88,6 +88,5 @@ def is_odd(n):
 L = list(filter(is_odd, range(1, 20)))
 # 改成匿名函数如下
 N = list(filter(lambda x: x % 2 == 1, range(1, 20)))
-
 print('L:',L)
 print('N:',N)
